@@ -4,8 +4,8 @@
 3. qmk tool boxでpro microにロード
 
 ## su120 13x4
-kle http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264fac
-kfb [su120_4x13_kfb.json](./su120_4x13_kfb.json)
+* kle http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264fac
+* kfb [su120_4x13_kfb.json](./su120_4x13_kfb.json)
 
 |rows|pin|
 |--|--|
