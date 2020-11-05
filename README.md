@@ -32,6 +32,7 @@ kle http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264f
 |12|B5|
 
 ## gherkin
+[頑張ってGherkin 30 key Keyboardを作るぞ！【ファームウェア書き込み編】](https://romly.com/archives/2017/11/gherkin_firmware.html)
 
 [gherkin_kle.json](./gherkin_kle.json)
 
