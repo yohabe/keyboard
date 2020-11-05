@@ -5,7 +5,7 @@
 
 ## su120 13x4
 kle http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264fac
-kfb psu120_4x13_kfb.json](./su120_4x13_kfb.json)
+kfb [su120_4x13_kfb.json](./su120_4x13_kfb.json)
 
 |rows|pin|
 |--|--|
