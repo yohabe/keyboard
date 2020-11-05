@@ -4,8 +4,7 @@
 3. qmk tool boxでpro microにロード
 
 ## su120 13x4
-layout
-http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264fac
+kle http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264fac
 
 
 
