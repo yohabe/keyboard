@@ -61,7 +61,7 @@ qmk toolboxでpro microにロード
 # su120 13x4
 * keyboard layout editorの設定 http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264fac
 * keyboard firmware builderの設定 [su120_4x13_kfb.json](./su120_4x13_kfb.json)
-* ble micro proのkeymap設定 []()
+* [ble qmk configurator](https://sekigon-gonnoc.github.io/qmk_configurator/)のkeymap設定 [ble_qmk_config_keymap.json](./ble_qmk_config_keymap.json)
 
 |rows|pin|
 |--|--|
