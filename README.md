@@ -1,15 +1,19 @@
 # keyboard
+
+## レイアウト
 * KLEでレイアウトを決める
 
 
+## firmware
 * kle.jsonを https://kbfirmware.com/ にロードして、keymapをきめる
-OR
+
 * qmkを使う
+
 see [docker start guide](https://docs.qmk.fm/#/getting_started_docker?id=docker-quick-start)
 
 git clone
 ```
-git clone --recurse-submodules https://github.com/qmk/qmk_firmware.git
+git clone --recurse-submodules https://github.com/yohabe/qmk_firmware.git
 cd qmk_firmware
 ```
 
@@ -44,14 +48,14 @@ or open the directory in your favourite text editor.
 ビルドする
 ```
 # util/docker_build.sh <keyboard>:<keymap>
-$ util/docker_build.sh abc:default
+$ util/docker_build.sh yohabe_su120:default
 
 OR
-docker$ qmk compile -kb abc -km default
+docker$ qmk compile -kb yohabe_su120 -km default
 ```
 
 
-
+## ロード
 qmk toolboxでpro microにロード
 
 ## su120 13x4
