@@ -1,7 +1,58 @@
 # keyboard
-1. KLEでレイアウトを決める
-2. jsonを https://kbfirmware.com/ にロードして、keymapをきめる
-3. qmk tool boxでpro microにロード
+* KLEでレイアウトを決める
+
+
+* kle.jsonを https://kbfirmware.com/ にロードして、keymapをきめる
+OR
+* qmkを使う
+see [docker start guide](https://docs.qmk.fm/#/getting_started_docker?id=docker-quick-start)
+
+git clone
+```
+git clone --recurse-submodules https://github.com/qmk/qmk_firmware.git
+cd qmk_firmware
+```
+
+util/docker_build.shを改造して/bin/shを起動する
+```
+vi util/docker_build.sh
+```
+
+
+新しいキーボードを定義
+```
+docker$ util/new_keyboard.sh
+Generating a new QMK keyboard directory
+
+Keyboard Name: abc
+Keyboard Type [avr]:
+Your Name: abcd
+
+Copying base template files... done
+Copying avr template files... done
+Renaming keyboard files... done
+Replacing %YEAR% with 2020... done
+Replacing %KEYBOARD% with abc... done
+Replacing %YOUR_NAME% with abcd... done
+
+Created a new keyboard called abc.
+
+To start working on things, cd into keyboards/abc,
+or open the directory in your favourite text editor.
+```
+
+ビルドする
+```
+# util/docker_build.sh <keyboard>:<keymap>
+$ util/docker_build.sh abc:default
+
+OR
+docker$ qmk compile -kb abc -km default
+```
+
+
+
+qmk toolboxでpro microにロード
 
 ## su120 13x4
 * kle http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264fac
