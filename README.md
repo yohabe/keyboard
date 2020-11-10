@@ -1,10 +1,10 @@
-# keyboard
+# keyboardの設定ことはじめ
 
-## レイアウト
+#### レイアウト
 * KLEでレイアウトを決める
 
 
-## firmware
+#### firmware
 * kle.jsonを https://kbfirmware.com/ にロードして、keymapをきめる
 
 * qmkを使う
@@ -55,12 +55,13 @@ docker$ qmk compile -kb yohabe_su120 -km default
 ```
 
 
-## ロード
+#### ロード
 qmk toolboxでpro microにロード
 
-## su120 13x4
-* kle http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264fac
-* kfb [su120_4x13_kfb.json](./su120_4x13_kfb.json)
+# su120 13x4
+* keyboard layout editorの設定 http://www.keyboard-layout-editor.com/#/gists/b3c80e7ce552fb34b86d289779264fac
+* keyboard firmware builderの設定 [su120_4x13_kfb.json](./su120_4x13_kfb.json)
+* ble micro proのkeymap設定 []()
 
 |rows|pin|
 |--|--|
@@ -85,7 +86,8 @@ qmk toolboxでpro microにロード
 |11|B4|
 |12|B5|
 
-## gherkin
+
+# gherkin
 [頑張ってGherkin 30 key Keyboardを作るぞ！【ファームウェア書き込み編】](https://romly.com/archives/2017/11/gherkin_firmware.html)
 
 [gherkin_kle.json](./gherkin_kle.json)
