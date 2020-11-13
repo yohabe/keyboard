@@ -4,23 +4,38 @@
 * KLEでレイアウトを決める
 
 
-#### firmware
+#### firmware with keyboard firmware builder
 * kle.jsonを https://kbfirmware.com/ にロードして、keymapをきめる
 
-* qmkを使う
+### firmware with qmk
 
 see [docker start guide](https://docs.qmk.fm/#/getting_started_docker?id=docker-quick-start)
 
 git clone
 ```
+# original
 git clone --recurse-submodules https://github.com/yohabe/qmk_firmware.git
 cd qmk_firmware
 ```
 
-util/docker_build.shを改造して/bin/shを起動する
 ```
-vi util/docker_build.sh
+# ble micropro
+git clone --depth 1 -b dev/ble_micro_pro https://github.com/sekigon-gonnoc/qmk_firmware.git qmk_firmware_bmp
+cd qmk_firmware_bmp
 ```
+
+```
+docker run --rm -it  \
+	--user root \
+	-w /qmk_firmware_bmp \
+	-v .:/qmk_firmware_bmp \
+	-e ALT_GET_KEYBOARDS=true \
+	-e SKIP_GIT="$SKIP_GIT" \
+	-e MAKEFLAGS="$MAKEFLAGS" \
+	qmkfm/base_container \
+  /bin/sh
+```
+
 
 
 新しいキーボードを定義
@@ -47,11 +62,7 @@ or open the directory in your favourite text editor.
 
 ビルドする
 ```
-# util/docker_build.sh <keyboard>:<keymap>
-$ util/docker_build.sh yohabe_su120:default
-
-OR
-docker$ qmk compile -kb yohabe_su120 -km default
+make yohabe_su120:default
 ```
 
 
