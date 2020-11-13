@@ -60,6 +60,36 @@ To start working on things, cd into keyboards/abc,
 or open the directory in your favourite text editor.
 ```
 
+必要なファイル
+* config.h
+```
+#define MATRIX_ROW_PINS { F6, F7, B1, D2 }
+#define MATRIX_COL_PINS { D1,D0,D4,F4,F5,B3,B2,B6,C6,D7,E6,B4,B5 }
+```
+
+* <keyboard_name>.h
+```
+#define LAYOUT( \
+    k00, k01, k02,k03,k04,k05,k06,k07,k08,k09,k010,k011,k012, \
+    k10, k11, k12,k13,k14,k15,k16,k17,k18,k19,k110,k111,k112, \
+    k20, k21, k22,k23,k24,k25,k26,k27,k28,k29,k210,k211,k212, \
+    k30, k31, k32,k33,k34,k35,k36,k37,k38,k39,k310,k311,k312\
+) { \
+    { k00, k01, k02,k03,k04,k05,k06,k07,k08,k09,k010,k011,k012}, \
+    {k10, k11, k12,k13,k14,k15,k16,k17,k18,k19,k110,k111,k112}, \
+    {k20, k21, k22,k23,k24,k25,k26,k27,k28,k29,k210,k211,k212}, \
+    {k30, k31, k32,k33,k34,k35,k36,k37,k38,k39,k310,k311,k312}, \
+}
+```
+
+* keymaps/default/keymap.c
+```
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+...
+}
+
+```
+
 ビルドする
 ```
 make yohabe_su120:default
