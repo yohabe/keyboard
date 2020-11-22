@@ -108,7 +108,7 @@ qmk toolboxでpro microにロード
 * [ble qmk configurator](https://sekigon-gonnoc.github.io/qmk_configurator/)のkeymap設定 [ble_qmk_config_keymap.json](./ble_qmk_config_keymap.json)
 
 ble qmk configuratorで設定をロードする方法
-1. charlesでhttps://api.qmk.fm/v1/keyboards/su120　をフックして ble_qmk_config_layout.json を返す。access-control-allow-origin: https://sekigon-gonnoc.github.io をつける
+1. charlesでhttps://api.qmk.fm/v1/keyboards/su120 をフックして [ble_qmk_config_layout.json](./ble_qmk_config_layout.json) を返す。access-control-allow-origin: https://sekigon-gonnoc.github.io をつける
 2. charlesでhttps://api.qmk.fm/v1/keyboards/su120/readme　をフックしてxxxを返す。access-control-allow-origin: https://sekigon-gonnoc.github.io をつける
 3. keymap設定 [ble_qmk_config_keymap.json](./ble_qmk_config_keymap.json)をインポートする
 
