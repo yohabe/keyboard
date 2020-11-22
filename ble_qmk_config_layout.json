@@ -1,0 +1,20 @@
+{
+    "git_hash": "a952bf2d31ec379ec5e5bbf9b1d1b2673ebbacad",
+    "last_updated": "2020-11-22 07:43:47 UTC",
+    "keyboards": {
+        "su120":
+
+        {
+            "keyboard_name": "",
+            "url": "",
+            "maintainer": "qmk",
+            "width": 13.75,
+            "height": 4,
+            "layouts": {
+                "LAYOUT": {
+                    "layout": [{"label":"tab", "x":0, "y":0}, {"label":"1", "x":1, "y":0}, {"label":"2", "x":2, "y":0}, {"label":"3", "x":3, "y":0}, {"label":"4", "x":4, "y":0}, {"label":"5", "x":5, "y":0}, {"label":"6", "x":6, "y":0}, {"label":"7", "x":7, "y":0}, {"label":"8", "x":8, "y":0}, {"label":"9", "x":9, "y":0}, {"label":"0", "x":10, "y":0}, {"label":"{", "x":11, "y":0}, {"label":"BS", "x":12, "y":0}, {"label":"ctrl", "x":0.25, "y":1}, {"label":"f1", "x":1.25, "y":1}, {"label":"f2", "x":2.25, "y":1}, {"label":"f3", "x":3.25, "y":1}, {"label":"f4", "x":4.25, "y":1}, {"label":"f5", "x":5.25, "y":1}, {"label":"f6", "x":6.25, "y":1}, {"label":"f7", "x":7.25, "y":1}, {"label":"f8", "x":8.25, "y":1}, {"label":"f9", "x":9.25, "y":1}, {"label":"f10", "x":10.25, "y":1}, {"label":"\"", "x":11.25, "y":1}, {"label":"|", "x":12.25, "y":1}, {"label":"Shift", "x":0.75, "y":2}, {"label":"f11", "x":1.75, "y":2}, {"label":"f12", "x":2.75, "y":2}, {"label":"C", "x":3.75, "y":2}, {"label":"V", "x":4.75, "y":2}, {"label":"", "x":5.75, "y":2}, {"label":"", "x":6.75, "y":2}, {"label":"", "x":7.75, "y":2}, {"label":"", "x":8.75, "y":2}, {"label":">", "x":9.75, "y":2}, {"label":"?", "x":10.75, "y":2}, {"label":"_", "x":11.75, "y":2}, {"label":"+", "x":12.75, "y":2}, {"label":"esc", "x":0.75, "y":3}, {"label":"", "x":1.75, "y":3}, {"label":"Alt", "x":2.75, "y":3}, {"label":"cmd", "x":3.75, "y":3}, {"label":"l1", "x":4.75, "y":3}, {"label":"space", "x":5.75, "y":3}, {"label":"space", "x":6.75, "y":3}, {"label":"l2", "x":7.75, "y":3}, {"label":"cmd", "x":8.75, "y":3}, {"label":"&larr;", "x":9.75, "y":3}, {"label":"&darr;", "x":10.75, "y":3}, {"label":"&uarr;", "x":11.75, "y":3}, {"label":"&rarr;", "x":12.75, "y":3}]
+                }
+            }
+        }
+    }
+}
