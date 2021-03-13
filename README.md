@@ -112,7 +112,12 @@ ble qmk configuratorで設定をロードする方法
 2. charlesでhttps://api.qmk.fm/v1/keyboards/su120/readme をフックして [ble_qmk_config_layout.json](./ble_qmk_config_layout.json)  を返す。access-control-allow-origin: https://sekigon-gonnoc.github.io をつける
 3. keymap設定 [ble_qmk_config_keymap.json](./ble_qmk_config_keymap.json)をインポートする
 
+Tools -> Map Local
 ![image](https://user-images.githubusercontent.com/1799947/111030428-8db52180-8445-11eb-975a-6b4e530cd306.png)
+
+Tools -> Rewrite
+![image](https://user-images.githubusercontent.com/1799947/111030516-fdc3a780-8445-11eb-95f7-daebb36f2c4b.png)
+
 
 
 
